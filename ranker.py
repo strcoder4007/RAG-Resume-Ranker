@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 import logging
-import time
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
+
+from tqdm import tqdm
 
 from document_processor import process_document
 from llm_scorer import score_resume
@@ -23,7 +24,10 @@ def _gather_resume_files(data_folder: Path) -> List[Path]:
 
 
 def process_all_resumes(
-    data_folder: str, job_description: str, llm: Any
+    data_folder: str,
+    job_description: str,
+    llm: Any,
+    output_path: Optional[str] = None,
 ) -> List[Dict[str, Any]]:
     """
     Process all resumes in the data folder and score them.
@@ -43,28 +47,30 @@ def process_all_resumes(
     pdf_count = sum(1 for path in resume_files if path.suffix.lower() == ".pdf")
     docx_count = sum(1 for path in resume_files if path.suffix.lower() == ".docx")
     print(f"Found {total} documents ({pdf_count} PDF, {docx_count} DOCX)")
-    for index, path in enumerate(resume_files, start=1):
-        percent_complete = (index / total) * 100
-        print(f"[{index}/{total}] ({percent_complete:.0f}%) {path.name} ...", end="")
+    with tqdm(resume_files, desc="Scoring resumes", unit="resume") as progress:
+        for path in progress:
+            progress.set_postfix(file=path.name)
 
-        doc_data = process_document(str(path))
-        if not doc_data:
-            print(" skipped.")
-            continue
+            doc_data = process_document(str(path))
+            if not doc_data:
+                progress.write(f"Skipped {path.name}: unreadable or empty.")
+                continue
 
-        try:
-            scoring = score_resume(llm, doc_data["content"], job_description)
-        except Exception as exc:
-            logger.error("LLM scoring failed for %s: %s", path.name, exc)
-            print(" failed to score.")
-            continue
+            try:
+                scoring = score_resume(llm, doc_data["content"], job_description)
+            except Exception as exc:
+                logger.error("LLM scoring failed for %s: %s", path.name, exc)
+                progress.write(f"Failed to score {path.name}: {exc}")
+                continue
 
-        scoring.update(
-            {"filename": doc_data["filename"], "file_type": doc_data["file_type"]}
-        )
-        results.append(scoring)
-        print(f" Score: {scoring['score']:.1f}")
-        time.sleep(0.1)
+            scoring.update(
+                {"filename": doc_data["filename"], "file_type": doc_data["file_type"]}
+            )
+            results.append(scoring)
+            progress.write(f"Scored {path.name}: {scoring['score']:.1f}")
+
+            if output_path:
+                rank_and_save_results(results, output_path, job_description)
 
     return results
 

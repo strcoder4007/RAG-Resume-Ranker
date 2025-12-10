@@ -60,7 +60,9 @@ def main() -> None:
         sys.exit(1)
 
     print(f"Scanning {data_folder} for resumes...")
-    results = process_all_resumes(str(data_folder), job_description, llm)
+    results = process_all_resumes(
+        str(data_folder), job_description, llm, str(output_path)
+    )
     if not results:
         print("No resumes were successfully processed.")
         sys.exit(1)

@@ -1,0 +1,57 @@
+===========================================
+RESUME RANKING RESULTS
+===========================================
+Total Resumes Processed: 11
+Job Description: Full-Stack Web Developer – DataHat AI 
+
+Overview 
+DataHat AI is hiring a Senior Full-Stack Web Devel...
+Generated: 2025-12-10 21:06:58
+
+-------------------------------------------
+RANKED RESULTS
+-------------------------------------------
+
+Rank 1: AbhayPatidar.pdf
+Score: 85.0/100
+Reasoning: Core skills match React (but not TypeScript) and AWS (vs Azure), with relevant experience in full-stack development and cloud deployments. Projects demonstrate impact on scalability and real-time systems, aligning with domain needs. Gaps include lack of Node.js/Express, WebRTC, and Azure-specific expertise, which are critical for the role.
+
+Rank 2: Aluru_Dhileep_Kumar_Resume.pdf
+Score: 83.0/100
+Reasoning: Core skills match: Candidate has React, Node.js, AWS, Docker, and TypeScript, but lacks WebRTC and testing tools (Jest/Cypress). Relevant experience: 4 years of full-stack work with scalable systems, leadership in code reviews, and cloud deployment. Domain alignment: Data integration and API development align with AI/enterprise needs. Education: Bachelor's in CS. Gaps: Missing WebRTC and testing tools critical for real-time features and quality assurance.
+
+Rank 3: Aadil's Resume Latest.pdf
+Score: 80.0/100
+Reasoning: Core skills match React/TypeScript, Node.js, and databases, but lack WebRTC and Azure deployment. Experience is 1.5 years (within 2-5 range) with full-stack projects. Domain alignment is limited to general web apps, missing AI/tech domain. Education meets requirements. Gaps include no mention of WebRTC, Azure, CI/CD tools, or security compliance.
+
+Rank 4: AbdullaResume_2.pdf
+Score: 80.0/100
+Reasoning: Core skills match React/TypeScript/Node.js/Express, databases, and DevOps tools (Docker, CI/CD), but lack WebRTC and Azure deployment experience (critical for the role). Relevant experience (4+ years) shows leadership in full-stack projects with measurable impact (cost savings, performance improvements). Domain alignment is strong with AI chatbots and enterprise apps. Education (BCA) is acceptable as a 'similar' degree.
+
+Rank 5: ANAGHA_PH.pdf
+Score: 75.0/100
+Reasoning: Strong match in tech stack (React, Node.js, AWS, Docker, CI/CD) and domain alignment (cybersecurity, EdTech). Experience with Azure and leadership in project ownership. Gaps include missing WebRTC, no explicit mention of Jest/Cypress testing tools, and BSc in Instrumentation (not CS).
+
+Rank 6: Akanksha-Resume.pdf
+Score: 75.0/100
+Reasoning: Core skills match React, Node.js, APIs, CI/CD, and Docker (40/50), but lack TypeScript, WebRTC, and Azure deployment. Experience shows 3 years of full-stack work with leadership in code reviews (30/30). Domain alignment is weak (e-commerce vs real-time/WebRTC focus) (5/10). Education matches the required degree (10/10). Missing key tools like Azure and WebRTC significantly impact the score.
+
+Rank 7: Abhirup Datta resume.pdf
+Score: 70.0/100
+Reasoning: Core skills match React/TypeScript/Node.js but lack Azure deployment (GCP used instead) and explicit WebRTC experience. Relevant experience shows 3+ years of full-stack work with senior roles, but testing tools (Jest/Cypress) are missing. Domain alignment is weak due to no AI/data projects. Education is acceptable with a B.Tech.
+
+Rank 8: Aditya kumar_Software developer.pdf
+Score: 65.0/100
+Reasoning: Core skills match React, Node.js, REST APIs, and Git (40/50). Experience shows 2+ years of full-stack work with MERN/React Native (25/30). Domain alignment is weak (5/10) as projects focus on educational apps vs AI/data systems. Education meets requirements (10/10). Gaps include missing TypeScript, WebRTC, Azure deployment, and leadership evidence for seniority.
+
+Rank 9: ADITYA SHARANN RESUME.pdf
+Score: 35.0/100
+Reasoning: Core skills match is weak (0/50) due to lack of TypeScript, WebRTC, Azure deployment, and testing tools. Experience (0/30) is insufficient (only 8 months of entry-level internships). Domain alignment (0/10) lacks AI/data focus and critical Azure/WebRTC expertise. Education (5/10) has relevant CS degree but no portfolio evidence for required tech stack.
+
+Rank 10: Anjali Singh CV_2025.pdf
+Score: 35.0/100
+Reasoning: The resume lacks critical match for React/TypeScript/Node.js (core skills) and WebRTC. Experience is focused on .NET/ASP.NET MVC/SQL Server rather than full-stack JS/TypeScript. Azure deployment is mentioned but no specifics on App Service/Functions. No evidence of API design, CI/CD, or security compliance. Domain experience in logistics/utilities doesn't align with AI/data product context. Leadership/mentoring roles are absent despite seniority requirements.
+
+Rank 11: aman+resume+final1+(1)+(1).docx
+Score: 35.0/100
+Reasoning: The resume lacks concrete evidence of required skills like React/TypeScript, Node.js/Express, WebRTC, and Azure deployment. While it shows basic knowledge of JavaScript/Python, there's no projects or experience demonstrating full-stack development with the specified tech stack. The work experience is vague with no quantifiable impact or leadership examples. Education matches but experience level and domain-specific skills are insufficient.

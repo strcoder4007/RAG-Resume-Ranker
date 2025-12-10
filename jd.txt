@@ -1,1 +1,38 @@
-Replace this text with the target job description before running the ranker.
+Full-Stack Web Developer – DataHat AI 
+
+Overview 
+DataHat AI is hiring a Senior Full-Stack Web Developer who can build reliable software and understand why it matters to customers and the business. You should be able to connect product goals to technical decisions, explain trade offs to non technical teams, and guide our systems from concept to delivery. You will work across architecture, development, deployment, and mentoring. If you want to influence how products evolve and enjoy solving practical problems, this role offers that ownership. 
+
+Key Responsibilities 
+
+Build responsive front end interfaces using React and TypeScript, including real time interactions with WebRTC. 
+
+Develop secure REST APIs and microservices with Node.js and Express, integrating external services such as Twilio. 
+
+Deploy and improve applications on Azure App Service and Functions with attention to scale, CI/CD, monitoring, and security. 
+
+Work closely with business, product, and design teams to understand needs, communicate options, and shape decisions. 
+
+Lead engineering practices including code reviews, documentation, and mentoring junior developers. 
+
+Troubleshoot complex issues, improve performance, and ensure compliance with GDPR and security guidelines. 
+
+Required Skills & Experience 
+
+2 to 5 years of full stack development with JavaScript or TypeScript, React, Node.js or Express, and SQL or NoSQL databases such as PostgreSQL or MongoDB. 
+
+Solid knowledge of WebRTC, API design, Git workflows, and cloud deployment on Azure or AWS. 
+
+Experience with testing tools (Jest, Cypress), Docker, and agile delivery. 
+
+Strong communication, leadership traits, and awareness of how engineering choices impact business outcomes. 
+
+Bachelor’s degree in Computer Science or similar, with a portfolio of scalable web apps. 
+
+Preferred Qualifications 
+
+Experience with serverless systems, Kubernetes, or tools such as GitHub Actions or Jenkins. 
+
+Familiarity with Redux for state management and OAuth or JWT for authentication. 
+
+ 
